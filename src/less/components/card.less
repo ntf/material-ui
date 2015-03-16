@@ -4,17 +4,34 @@
   background-color: @white;
   padding: @card-padding;
   //.border-radius;
+  margin:8px;
+  display:none;
+  &.mui-is-open {
+    display:block;
+  }
+  .mui-card-content {
+  }
 
-  .mui-card-toolbar {
-    margin-top: (@card-padding * -1);
+  .mui-card-actions {
+    margin-top: @card-padding;
     margin-left: (@card-padding * -1);
     margin-right: (@card-padding * -1);
-    margin-bottom: @card-padding;
+    margin-bottom: (@card-padding * -1);
     //border-bottom: solid 1px @border-color;
     line-height: 56px;
     height: 56px;
-    padding-left: @card-padding;
+    border-top: solid 1px #e0e0e0;
+    padding:8px;
+    /*padding-left: @card-padding;
     padding-right: @card-padding;
-    .mui-font-style-menu;
+    .mui-font-style-menu;*/
+    .mui-raised-button {
+        margin:0 4px;
+    }
+    .right {
+      text-align:right;
+    }
   }
+
+
 }
